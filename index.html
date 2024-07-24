@@ -3,25 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather forcast</title>
   </head>
+  <div class="weather-app">
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city...." required />
-        <input type="submit" value="search" />
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city...." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button" />
       </form>
     </header>
     <main>
+        <div class="weather-app-data">
       <div>
-        <h1>Paris</h1>
-        <p>
+        <h1 class="weather-app-city">Paris</h1>
+        <p class="weather-app-details">
           Tuesday 14:49, scattered clouds
           <br />
-          Humidity: 66%, Wind: 3.13km/h
+          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
         </p>
       </div>
-      <div>🌥️ 12&deg</div>
+      <div class="weather-app-temperature-container">
+        <div class="weather-app-icon">🌥️</div>
+        <div class="weather-app-temperature">12</div>
+        <div class="weather-app-unit">&degC</div>
+    </div>
     </main>
     <footer>
       This project was coded by<a
@@ -40,5 +47,6 @@
         >Netlify</a
       >
     </footer>
+    </div>
   </body>
 </html>
